@@ -20,7 +20,7 @@
 		$binu_app->add_style( array('name' => 'intro', 'color' => '#FF0000') );
 		$binu_app->add_style( array('name' => 'body_text', 'color' => '#0000FF') );	
 		
-		$binu_app->add_text("Devil's Dictionary",'header');	 
+		$binu_app->add_text("Urban Dictionary",'header');	 
 		if (isset($_GET['binu_transaction_res'])&&($_GET['binu_transaction_res']<>0)) 
 		{
 			header("Location: ".$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF'])."error.php?binu_transaction_res=".$_GET['binu_transaction_res'] );
