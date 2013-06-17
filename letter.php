@@ -42,12 +42,12 @@ $colname_wordsRecordset = "-1";
 if (isset($_GET['letter'])) {
   $colname_wordsRecordset = $_GET['letter'];
 }
-mysql_select_db($database_binu_devilsdictionary, $binu_devilsdictionary);
+mysql_select_db($database_binu_urbandictionary, $binu_urbandictionary);
 $query_wordsRecordset = sprintf("SELECT word, definition FROM word WHERE word LIKE '%s%s' ORDER BY word ASC", GetSQLValueString($colname_wordsRecordset, "text"),
 GetSQLValueString("%", "text"));
         
 $query_limit_wordsRecordset = sprintf("%s LIMIT %d, %d", $query_wordsRecordset, $startRow_wordsRecordset, $maxRows_wordsRecordset);
-$wordsRecordset = mysql_query($query_limit_wordsRecordset, $binu_devilsdictionary) or die(mysql_error());
+$wordsRecordset = mysql_query($query_limit_wordsRecordset, $binu_urbandictionary) or die(mysql_error());
 $row_wordsRecordset = mysql_fetch_assoc($wordsRecordset);
 
 if (isset($_GET['totalRows_wordsRecordset'])) {
