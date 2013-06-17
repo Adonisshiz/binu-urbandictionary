@@ -62,7 +62,7 @@ $totalPages_wordsRecordset = ceil($totalRows_wordsRecordset/$maxRows_wordsRecord
 
 
 	
-	$binu_app->add_text("Devil's Dictionary", 'header');
+	$binu_app->add_text("Urban Dictionary", 'header');
 	$binu_app->add_text("Browse by letter",'intro');
 	
 	
